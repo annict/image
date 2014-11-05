@@ -7,7 +7,7 @@ Dragonfly.app.configure do
   url_format '/media/:job/:name'
   url_host   ENV['DRAGONFLY_URL_HOST']
 
-  verify_urls false
+  secret ENV['DRAGONFLY_SECRET']
 
   common_s3_settings = {
     access_key_id:     ENV['S3_ACCESS_KEY_ID'],
