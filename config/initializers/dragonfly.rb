@@ -5,7 +5,7 @@ Dragonfly.app.configure do
   plugin :imagemagick
 
   url_format '/media/:job/:name'
-  url_host   ENV['DRAGONFLY_URL_HOST']
+  url_host   ENV['DRAGONFLY_URL']
 
   secret ENV['DRAGONFLY_SECRET']
 
